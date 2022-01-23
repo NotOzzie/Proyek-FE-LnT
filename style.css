@@ -1,0 +1,37 @@
+body {
+    background-color: #121212;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5vh;
+    color: rgba(255, 255, 255, 0.884);
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+
+h1::before,
+h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1::before {
+    background-color: rgb(253, 29, 29);
+    animation: typewriter 1s ease forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
