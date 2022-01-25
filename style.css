@@ -1,18 +1,43 @@
 body {
     background-color: #121212;
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.header {
+    background-color: #121212;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     min-height: 100vh;
     display: grid;
     place-content: center;
     text-align: center;
 }
 
+.profile p {
+    color: whitesmoke;
+    display: grid;
+    margin-left: 50%;
+    margin-right: 5vh;
+    font-size: 2.8vh;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* .profilepic {
+    display: grid;
+    margin-left: 5vh;
+} */
+
+h2 {
+    margin-left: 5vh;
+}
+
 h1 {
-    font-size: 5vh;
+    font-size: 7vh;
     color: rgba(255, 255, 255, 0.884);
     position: relative;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 } 
 
 h1::before,
@@ -26,12 +51,42 @@ h1::after {
 }
 
 h1::before {
-    background-color: rgb(253, 29, 29);
-    animation: typewriter 1s ease forwards;
+    background-color: #121212;
+    animation: typewriter 2s steps(28) 1s forwards;
+}
+
+h1::after {
+    width: .125em;
+    background: rgb(250, 247, 247);
+    animation: 
+        typewriter 2s steps(28) 1s forwards,
+        blink 750ms steps(28) infinite;
+}
+
+.subtitle {
+    color: rgb(255, 68, 68);
+    font-size: 3.5vh;
+    font-weight: 200;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 3s forwards;
 }
 
 @keyframes typewriter {
     to {
         left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
