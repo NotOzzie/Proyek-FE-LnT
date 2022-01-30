@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Benedict Osvaldo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,15 +17,140 @@
         <p class="subtitle">This is my Portofolio</p>
     </div>
 
-    <br>
+
+    <div class="title1">
+        <h2>
+            About Me
+        </h2>
+    </div>
+
+    <div class="subtitle1">
+        <h3>
+            1. Brief Overview
+        </h3>
+    </div>
 
     <div class="profile">
-        <!-- <img src="asset/Profile Pic.png" alt="Profile Picture" class="profilepic"> -->
-        <p>Ben is currently an undergraduate student of Bina Nusantara University (Binus),
+        <img src="asset/Profile Pic.png" alt="Profile Picture" class="profilepic">
+
+        <p> Ben is currently an undergraduate student of Bina Nusantara University (Binus),
             majoring in Information Systems. Through his study, he is motivated to learn, grow,
             and excel in computer and business studies. He has been interested and involved in
             a couple of organizational activities, namely BNCC and HIMSISFO. He is also very
-            eager to explore new things and experiences. </p>
+            eager to explore new things and experiences.
+        </p>    
     </div>
+
+    <div class="subtitle1">
+        <h3>
+            2. Education History
+        </h3>
+    </div>
+
+    <div class="table">
+        <style type="text/css">
+            .tg  {border-collapse:collapse;border-color:#C44D58;border-spacing:0;}
+            .tg td{background-color:#F9CDAD;border-color:#C44D58;border-style:solid;border-width:1px;color:#002b36;
+              font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{background-color:#FE4365;border-color:#C44D58;border-style:solid;border-width:1px;color:#fdf6e3;
+              font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-yma3{background-color:#ff2c2c;border-color:#641515;font-family:inherit;font-size:24px;text-align:center;vertical-align:top}
+            .tg .tg-dei7{background-color:#ff2c2c;border-color:#641515;font-family:inherit;font-size:24px;text-align:center;vertical-align:top}
+            .tg .tg-ej7g{background-color:#5b5b5b;border-color:#000000;color:#ffffff;font-family:inherit;font-size:20px;text-align:center;
+              vertical-align:top}
+            .tg .tg-i86m{background-color:#5b5b5b;border-color:#000000;color:#ffffff;font-family:inherit;font-size:20px;text-align:left;
+              vertical-align:top}
+            </style>
+            <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-yma3">No. </th>
+                <th class="tg-dei7">Instance Name</th>
+                <th class="tg-dei7">Year</th>
+                <th class="tg-dei7">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-ej7g">1</td>
+                <td class="tg-i86m">Bina Nusantara University</td>
+                <td class="tg-i86m">2021 - Present</td>
+                <td class="tg-i86m">Information Systems Major</td>
+              </tr>
+              <tr>
+                <td class="tg-ej7g">2</td>
+                <td class="tg-i86m">Canisius College Senior High School</td>
+                <td class="tg-i86m">2018 - 2021</td>
+                <td class="tg-i86m">Student of Natural Sciences</td>
+              </tr>
+              <tr>
+                <td class="tg-ej7g">3</td>
+                <td class="tg-i86m">Canisius College Junior High School</td>
+                <td class="tg-i86m">2015 - 2018</td>
+                <td class="tg-i86m">Student of Natural Sciences</td>
+              </tr>
+            </tbody>
+            </table>
+    </div>
+
+    <div class="subtitle1">
+        <h3>
+            3. Software & Programming Language
+        </h3>
+    </div>
+
+    <div class="softandlang">
+        <p class="softwaretitle">
+            Software 
+        </p>
+
+        <ul class="software">
+            <li>Microsoft Office (Proficient)</li>
+            <li>Adobe Photoshop (Proficient)</li>
+            <li>Adobe Premiere Pro (Proficient)</li>
+            <li>Adobe Illustrator (Partially Proficient)</li>
+            <li>Adobe After Effects (Partially Proficient)</li>
+        </ul>
+        
+        <p class="softwaretitle">
+            Programming Language
+        </p>
+
+        <ol class="software">
+            <li>HTML (Partially Proficient)</li>
+            <li>CSS (Partially Proficient)</li>
+            <li>Java (Partially Proficient)</li>
+            <li>Python (Partially Proficient)</li>
+        </ol>
+
+    </div>
+
+    <div class="title1">
+        <h2>
+            Portofolio
+        </h2>
+    </div>
+
+    <iframe class="pdf" src="asset/Benedict Osvaldo_Portofolio.pdf" frameborder="0" width="85%" height="700vh"></iframe>
+    <br>
+
+    <div class="title1">
+        <h2>
+            Contact Me
+        </h2>
+    </div>
+
+    <form class="form" id="contactform">
+        <label for="fullname">Full Name: </label>
+        <input type="text" name="fullname" id="fullname"><br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email"><br>
+        <label for="linkedin">LinkedIn: </label>
+        <input type="url" name="linkedin" id="linkedin"><br>
+        <label for="comment">Comment: </label>
+        <input type="button" onclick="alert('Your data has been sent!')" value="Submit">
+    </form>
+
+    <textarea class="comment" rows="6" cols="50" name="comment" form="contactform"> </textarea>
 </body>
 </html>

@@ -1,43 +1,110 @@
 body {
     background-color: #121212;
     margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header {
     background-color: #121212;
     margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
     display: grid;
     place-content: center;
     text-align: center;
 }
 
-.profile p {
-    color: whitesmoke;
-    display: grid;
-    margin-left: 50%;
-    margin-right: 5vh;
-    font-size: 2.8vh;
-    line-height: 1.5;
-    text-align: justify;
+.title1 {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 15vh;
+    color: rgb(255, 68, 68);
+    font-size: 5.5vh;
 }
 
-/* .profilepic {
-    display: grid;
-    margin-left: 5vh;
-} */
+.profile {
+    display: flex;
+}
 
-h2 {
-    margin-left: 5vh;
+.profile p {
+    display: inline-block;
+    color: whitesmoke;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5vh;
+    font-size: 3vh;
+    line-height: 2;
+    text-align: justify;
+    transform: translateY(100px);
+    outline-color: rgb(255, 68, 68);
+    outline-style:double;
+    height: fit-content !important;
+}
+
+.profilepic {
+    margin-left: 15vh;
+    margin-bottom: 15vh;
+    -webkit-filter: drop-shadow(1px 1px 0 rgb(19, 19, 19)) 
+                    drop-shadow(-1px -1px 0 rgb(255, 68, 68));
+    filter:drop-shadow(1px 1px 0 rgb(19,19,19)) 
+           drop-shadow(-1px -1px 0 rgb(255, 68, 68));
+}
+
+.subtitle1 {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 15vh;
+    color: rgb(165, 44, 44);
+    font-size: 3.5vh;
+    transform: translateY(5vh);
+}
+
+.table {
+    margin: 3vh;
+    display: grid;
+    place-content: center;
+}
+
+.software {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 17vh;
+    color: whitesmoke;
+    font-size: 2.5vh;
+    line-height: 1.5;
+}
+
+.softwaretitle {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20vh;
+    color: rgb(250, 126, 126);
+    font-size: 3vh;
+}
+
+.pdf {
+    margin-left: 17vh;
+}
+
+.form {
+    transform: translateY(-5.5vh);
+    font-size: 3vh;
+    margin-left: 17vh;
+    color: whitesmoke;
+    line-height: 2;
+    max-width: fit-content;
+}
+
+.comment {
+    transform: translateY(-5vh);
+    margin-left: 17vh;
+    background-color: #FA7E7E;
+    border: 5px outset #922727;
 }
 
 h1 {
-    font-size: 7vh;
+    font-size: 8vh;
     color: rgba(255, 255, 255, 0.884);
     position: relative;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Montserrat', sans-serif;
 } 
 
 h1::before,
@@ -65,7 +132,7 @@ h1::after {
 
 .subtitle {
     color: rgb(255, 68, 68);
-    font-size: 3.5vh;
+    font-size: 4vh;
     font-weight: 200;
     opacity: 0;
     transform: translateY(3rem);
