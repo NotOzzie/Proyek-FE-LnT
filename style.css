@@ -157,3 +157,225 @@ h1::after {
         transform: translateY(0);
     }
 }
+
+
+/* Untuk Tablet (iPad Pro)*/
+@media (max-width: 1024px) { 
+    .header {
+    background-color: #121212;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4.5vh;
+    color: rgba(255, 255, 255, 0.884);
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtitle {
+    color: rgb(255, 68, 68);
+    font-size: 3vh;
+    font-weight: 200;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 3s forwards;
+}
+
+.title1 {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 3vh;
+    color: rgb(255, 68, 68);
+    font-size: 3.5vh;
+}
+
+.subtitle1 {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 3vh;
+    color: rgb(165, 44, 44);
+    font-size: 3vh;
+    transform: translateY(4vh);
+}
+
+.profilepic {
+    max-width: 300px;
+    max-height: 300px;
+    margin-left: 3vh;
+    margin-bottom: 15vh;
+    -webkit-filter: drop-shadow(1px 1px 0 rgb(19, 19, 19)) 
+                    drop-shadow(-1px -1px 0 rgb(255, 68, 68));
+    filter:drop-shadow(1px 1px 0 rgb(19,19,19)) 
+           drop-shadow(-1px -1px 0 rgb(255, 68, 68));
+    transform: translateY(3vh);
+}
+
+.profile p {
+    display: inline-block;
+    color: whitesmoke;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5vh;
+    font-size: 1.6vh;
+    line-height: 2;
+    text-align: justify;
+    transform: translateY(100px);
+    outline-color: rgb(255, 68, 68);
+    outline-style:double;
+    height: fit-content !important;
+}
+
+.software {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 6vh;
+    color: whitesmoke;
+    font-size: 1.5vh;
+    line-height: 1.5;
+}
+
+.softwaretitle {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 7vh;
+    color: rgb(250, 126, 126);
+    font-size: 2vh;
+}
+
+.pdf {
+    margin-left: 5vh;
+    width: 90%;
+    height: 50vh;
+}
+
+.form {
+    transform: translateY(-3vh);
+    font-size: 1.5vh;
+    margin-left: 5vh;
+    color: whitesmoke;
+    line-height: 2;
+    max-width: fit-content;
+}
+
+.comment {
+    transform: translateY(-3vh);
+    margin-left: 5vh;
+    background-color: #FA7E7E;
+    border: 5px outset #922727;
+}
+}
+
+
+/* Untuk HP (iPhone X) */
+ /* @media (max-width: 376px) { 
+    .header {
+    background-color: #121212;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8vh;
+    color: rgba(255, 255, 255, 0.884);
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subtitle {
+    color: rgb(255, 68, 68);
+    font-size: 2.3vh;
+    font-weight: 200;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 3s forwards;
+}
+
+.title1 {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 3vh;
+    color: rgb(255, 68, 68);
+    font-size: 2vh;
+}
+
+.subtitle1 {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 3vh;
+    color: rgb(165, 44, 44);
+    font-size: 1.5vh;
+    transform: translateY(3vh);
+}
+
+.profilepic {
+    max-width: 20vh;
+    max-height: 20vh;
+    margin-left: 3vh;
+    margin-bottom: 15vh;
+    -webkit-filter: drop-shadow(1px 1px 0 rgb(19, 19, 19)) 
+                    drop-shadow(-1px -1px 0 rgb(255, 68, 68));
+    filter:drop-shadow(1px 1px 0 rgb(19,19,19)) 
+           drop-shadow(-1px -1px 0 rgb(255, 68, 68));
+    transform: translateY(5vh);
+}
+
+.profile p {
+    display: inline-block;
+    color: whitesmoke;
+    padding: 5px;
+    margin-left: 5%;
+    margin-right: 5vh;
+    font-size: 1vh;
+    line-height: 2;
+    text-align: justify;
+    transform: translateY(20px);
+    outline-color: rgb(255, 68, 68);
+    outline-style:double;
+    height: fit-content !important;
+}
+
+ .software {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 6vh;
+    color: whitesmoke;
+    font-size: 1.5vh;
+    line-height: 1.5;
+}
+
+.softwaretitle {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 7vh;
+    color: rgb(250, 126, 126);
+    font-size: 2vh;
+}
+
+.pdf {
+    margin-left: 5vh;
+    width: 70%;
+    height: 50vh;
+}
+
+.form {
+    transform: translateY(-3vh);
+    font-size: 1.5vh;
+    margin-left: 5vh;
+    color: whitesmoke;
+    line-height: 2;
+    max-width: fit-content;
+}
+
+.comment {
+    transform: translateY(-3vh);
+    margin-left: 5vh;
+    background-color: #FA7E7E;
+    border: 5px outset #922727;
+}
+ } */
